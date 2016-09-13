@@ -1,0 +1,37 @@
+$pc = #FD3F1D
+$sc = #1D97D2
+$bd = 1px solid #ddd
+
+
+@require "styles/reset"
+@require "styles/typo"
+@require "styles/space"
+@require "styles/layout"
+@require "styles/theme"
+
+//@require "u:grid[]"
+
+layout-width-base()
+//layout-width-hundred()
+layout-width-fraction()
+layout-grid-base()
+reset-box()
+reset-a()
+
+
+body
+  reset-space()
+  ff "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif
+  pt 88px
+  //pb 272px + 88px + 92px
+
+
+ul
+  lity no
+  mar 0
+  pad 0
+
+
+@import "_common"
+@import "_contact"
+@import "_info"
