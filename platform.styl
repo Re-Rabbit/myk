@@ -1,0 +1,111 @@
+$pc = #FD3F1D
+$sc = #1D97D2
+$bd = 1px solid #ddd
+
+
+@require "styles/reset"
+@require "styles/typo"
+@require "styles/space"
+@require "styles/layout"
+@require "styles/theme"
+
+//@require "u:grid[]"
+
+layout-width-base()
+//layout-width-hundred()
+layout-width-fraction()
+layout-grid-base()
+reset-box()
+reset-a()
+
+html
+body
+.platform
+.platform-bg
+  h 100%
+
+
+body
+  reset-space()
+  ff "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif
+
+
+.field
+  ff "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif
+  fz 1.5em
+  pad 0.5em
+  w 100%
+  bd 1px solid #fff
+  bg a0
+  cc #fff
+  bdrz 4px
+
+.checkbox
+  dis no
+
+
+
+.platform
+  pos rela
+
+.platform-bg
+  fill a, false, -1
+  bg url('/images/myk/platform-bg.png')
+  background-size cover
+
+.platform-b
+  ta cen
+  mt 8em
+
+.platform-form
+  w 400px
+  mx a
+  ta l
+  cc #fff
+  pt 15em
+
+.platform-t
+  ta cen
+
+.checkbox-field
+  dis ib
+  size 1.2em
+  bd 1px solid #fff
+  bdrz 4px
+  pos rela
+  t 4px
+  mr 0.25em
+  cur ptr
+
+.platform-field
+  my 2em
+
+.platform-body
+  pt 1em
+
+.platform-btn
+  ta cen
+  pad 1em
+  bg #FC9B37
+  bdrz 6px
+  my 1em
+
+.platform-links
+  ta cen
+  a
+    cc #FC9B37
+
+
+ul
+  lity no
+  mar 0
+  pad 0
+
+@import "_common"
+
+.header
+  bg a0
+  bd 0
+
+.nav-item
+  cc #fff

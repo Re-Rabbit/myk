@@ -1,0 +1,70 @@
+{# -*- mode: jinja2 -*- #}
+
+{% import "tpls/macros.html" as $ %}
+
+{% block content %}
+
+{% include "_common.html" %}
+
+
+<div class="platform">
+  <div class="platform-bg"></div>
+  
+
+  <div class="platform-form">
+    <div class="platform-t">
+      <img alt="" src="/images/myk/platform-1.png" />
+    </div>
+    <div class="platform-body">
+      <div class="platform-field">
+        <input name="" type="text" value="" class="field" placeholder="账号" />
+      </div>
+      <div class="platform-field">
+        <input name="" type="text" value="" class="field" placeholder="密码" />
+      </div>
+      <div class="platform-checkbox">
+        <label for="">
+          <div class="checkbox-field"></div>
+          <input class="checkbox" type="checkbox" value="" />
+          两周内自动登陆
+        </label>
+      </div>
+      <div class="platform-btn">
+        登录
+      </div>
+      <div class="platform-links">
+        忘记密码？ <a href="">点击这里找回</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="platform-b">
+    <img alt="" src="/images/myk/platform-b.png" />
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{#% include "_footer.html" %#}
+
+{% endblock %}
+
+
+{% block styles %}
+{{ $.css("platform") }}
+{% endblock %}
+
+
+{% extends "tpls/page.html" %}
+
