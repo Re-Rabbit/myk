@@ -8,7 +8,28 @@
 
 
 <div class="home-banner">
-  <img alt="" src="/images/myk/home-banner.png" />
+  <div class="home-carousel">
+    <img alt="" src="/images/myk/home-banner.png" />
+  </div>
+</div>
+
+<div class="home-0">
+  <div class="home-0-row">
+    <div class="home-0-block">
+      <img alt="" src="/images/myk/home-0-1.png" />
+    </div>
+    <div class="home-0-block">
+      <img alt="" src="/images/myk/home-0-2.png" />
+    </div>
+    <div class="home-0-block">
+      <img alt="" src="/images/myk/home-0-3.png" />
+    </div>
+  </div>
+  <div class="home-0-row">
+    <div class="home-0-block">
+      <img alt="" src="/images/myk/home-0-4.png" />
+    </div>
+  </div>
 </div>
 
 
@@ -25,7 +46,7 @@
 </div>
 
 
-<div class="section home-2">
+<div class="home-2">
   <div class="">
     <div class="home-2-timeline row">
       <div class="grid width--6-f">
@@ -215,7 +236,7 @@
                   <div class="row">
                     <div class="grid width--6">
                       <div class="home-4-num">
-                        13
+                        <img alt="" src="/images/myk/heart.png" /> 13
                       </div>
                     </div>
                     <div class="grid width--6">
@@ -271,7 +292,7 @@
                   <div class="row">
                     <div class="grid width--6">
                       <div class="home-4-num">
-                        13
+                        <img alt="" src="/images/myk/heart.png" /> 13
                       </div>
                     </div>
                     <div class="grid width--6">
@@ -327,7 +348,7 @@
                   <div class="row">
                     <div class="grid width--6">
                       <div class="home-4-num">
-                        13
+                        <img alt="" src="/images/myk/heart.png" /> 13
                       </div>
                     </div>
                     <div class="grid width--6">
@@ -356,11 +377,13 @@
 </div>
 
 
-<div class="section home-5">
+<div class="home-5">
   <div class="">
     <div class="home-5-title">一群心怀梦想，并且不断追求愿意为此而付出行动的人</div>
     <div class="home-5-block-container">
-      <div class="row">
+      <img alt="" src="/images/myk/home-5.png" />
+      {#
+       <div class="row">
         <div class="grid width--3">
           <div class="home-5-block">
             <div class="home-5-avatar">
@@ -399,6 +422,7 @@
           </div>
         </div>
       </div>
+        #}
     </div>
   </div>
 </div>
@@ -468,19 +492,19 @@
             <div class="row">
               <div class="grid width--6">
                 <div class="home-6-grid-l">
-                  <input name="" type="text" value="" class="field" placeholder="您的姓名" />
+                  <input name="name" type="text" value="" class="field" placeholder="您的姓名" />
                 </div>
               </div>
               <div class="grid width--6">
                 <div class="home-6-grid-r">
-                  <input name="" type="text" value="" class="field" placeholder="您的联系方式" />
+                  <input name="contact" type="text" value="" class="field" placeholder="您的联系方式" />
                 </div>
               </div>
             </div>
           </div>
 
           <div class="home-6-row">
-            <textarea cols="30" id="" name="" rows="10" class="field"></textarea>
+            <textarea cols="30" id="" name="description" rows="10" class="field"></textarea>
           </div>
 
           <div class="home-6-btn">提交您的需求</div>
@@ -505,6 +529,13 @@
 {{ $.css("index") }}
 {% endblock %}
 
+{% block scripts %}
+  <script src="http://webapi.amap.com/maps?v=1.3&key=4d28581adba669255e8f9028ddd4f5d5"></script>
+  {{ $.js("/vendor.dll") }}
+  {{ $.js("/commons") }}
+  {{ $.js("common") }}
+  {{ $.js("home") }}
+{% endblock %}
 
 {% extends "tpls/page.html" %}
 
