@@ -56,8 +56,20 @@ function toggleMaps() {
 }
 
 
+function sidebar() {
+  $('.home-0-block').on('mouseenter mouseleave', function(evt) {
+    let $elem = $(this).find('img')
+    let src = $elem.prop('src')
+    let matched = src.match(/(.*?home-0-)([\w|-]+)(.png)/)
+    $elem.prop('src', matched[1] +
+               (matched[2].length === 1 ? matched[2] + '-active' : matched[2].substr(0, matched[2].indexOf('-'))) +
+               matched[3])
+  })
+}
+
 
 function main() {
+  sidebar()
   toggleHeaderActive()
   toggleMaps()
   clearTimeout(mapstimer)

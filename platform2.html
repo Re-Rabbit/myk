@@ -68,5 +68,13 @@
 {% endblock %}
 
 
+{% block scripts %}
+  <script src="http://webapi.amap.com/maps?v=1.3&key=4d28581adba669255e8f9028ddd4f5d5"></script>
+  {{ $.js("/vendor.dll") }}
+  {{ $.js("/commons") }}
+  {{ $.js("common") }}
+  {{ $.js("home") }}
+{% endblock %}
+
 {% extends "tpls/page.html" %}
 

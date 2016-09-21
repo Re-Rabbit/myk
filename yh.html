@@ -5,7 +5,7 @@
 {% block content %}
 
 {% include "_common.html" %}
-
+{% include "_sidebar.html" %}
 
 <div class="yh-banner">
   <img alt="" src="/images/myk/home-banner.png" />
@@ -14,47 +14,40 @@
 
 <div class="yh-tab-titles">
   <div class="yh-tab-titles-container">
-    <div class="row">
+<div class="row">
       <div class="grid width--3">
-        <div class="yh-tab-title">
-          <div class="yh-tab-icon">
-            <img alt="" src="/images/myk/home-3-1.png" />
-          </div>
+        <div class="yh-tab-title" data-idx="1">
+          <div class="yh-tab-icon"></div>
           <div class="yh-tab-text">创客</div>
         </div>
       </div>
       <div class="grid width--3">
-        <div class="yh-tab-title">
-          <div class="yh-tab-icon">
-            <img alt="" src="/images/myk/home-3-1.png" />
-          </div>
+        <div class="yh-tab-title" data-idx="2">
+          <div class="yh-tab-icon"></div>
           <div class="yh-tab-text">创客</div>
         </div>
       </div>
 
       <div class="grid width--3">
-        <div class="yh-tab-title">
-          <div class="yh-tab-icon">
-            <img alt="" src="/images/myk/home-3-1.png" />
-          </div>
+        <div class="yh-tab-title" data-idx="3">
+          <div class="yh-tab-icon"></div>
           <div class="yh-tab-text">创客</div>
         </div>
       </div>
 
       <div class="grid width--3">
-        <div class="yh-tab-title">
-          <div class="yh-tab-icon">
-            <img alt="" src="/images/myk/home-3-1.png" />
-          </div>
+        <div class="yh-tab-title" data-idx="4">
+          <div class="yh-tab-icon"></div>
           <div class="yh-tab-text">创客</div>
         </div>
       </div>
     </div>
+    {##}
   </div>
 </div>
 
 
-<div class="yh-tab-1">
+<div class="yh-tab-content yh-tab-1">
 <div class="section">
   <div class="title-1">About Yihuan Mak-er</div>
   <div class="title-2">关于易换创客</div>
@@ -63,15 +56,15 @@
 
 <div class="section yh-1-1">
   <div class="row">
-    <div class="grid width--4">
+    <div class="grid width--6">
       <div class="yh-1-1-l">
-        <img alt="" src=""/> &nbsp;
+        <img alt="" src="/images/myk/yh-1-l.png" />
       </div>
     </div>
     <div class="grid width--6">
       <div class="yh-1-1-r">
         <div class="yh-1-1-t">
-          <img alt="" src=""/> &nbsp;
+          <img alt="" src="/images/myk/yh-1-t.png" />
         </div>
         <div class="yh-1-1-b">
           易换创客即“易换生活平台创业者”。易换创客是基于易换生活平台自身发展的一批创业者以个人为单位开启创业之路。享有易换生活平台的技术支持，同时具备三种（创客、商家 、消费者）转换身份，多种获利渠道。以及搭建联盟商圈资源互换，消费推荐等。易换创客， 较之于广义上的创客拥有独一无二的发展优势。
@@ -91,12 +84,12 @@
 
 
 
-<div class="section yh-1-2">
+<div class="yh-1-2">
   <div class="">
     <ul class="yh-1-2-container">
       <li class="yh-1-2-list">
         <div class="yh-1-2-pic">
-          <img alt="" src="/images/myk/contact-2-1.png" />
+          <img alt="" src="/images/myk/yh-2-1.png" />
         </div>
         <div class="yh-1-2-l">
           <div class="yh-1-2-title-1">
@@ -112,7 +105,7 @@
 
       <li class="yh-1-2-list">
         <div class="yh-1-2-pic">
-          <img alt="" src="/images/myk/contact-2-1.png" />
+          <img alt="" src="/images/myk/yh-2-2.png" />
         </div>
         <div class="yh-1-2-l">
           <div class="yh-1-2-title-1">
@@ -128,7 +121,7 @@
 
       <li class="yh-1-2-list">
         <div class="yh-1-2-pic">
-          <img alt="" src="/images/myk/contact-2-1.png" />
+          <img alt="" src="/images/myk/yh-2-3.png" />
         </div>
         <div class="yh-1-2-l">
           <div class="yh-1-2-title-1">
@@ -144,7 +137,7 @@
 
       <li class="yh-1-2-list">
         <div class="yh-1-2-pic">
-          <img alt="" src="/images/myk/contact-2-1.png" />
+          <img alt="" src="/images/myk/yh-2-4.png" />
         </div>
         <div class="yh-1-2-l">
           <div class="yh-1-2-title-1">
@@ -183,16 +176,16 @@
       </div>
     </div>
     <div class="grid width--6">
-      <div class="yh-1-3-pic">
-        <img alt="" src=""/> &nbsp;
+      <div class="yh-1-3-pic yh-1-3-pic-1">
+        <img alt="" src="/images/myk/yh-3-1.png" />
       </div>
     </div>
   </div>
 
   <div class="row">
     <div class="grid width--6">
-      <div class="yh-1-3-pic">
-        <img alt="" src=""/> &nbsp;
+      <div class="yh-1-3-pic yh-1-3-pic-2">
+        <img alt="" src="/images/myk/yh-3-2.png" />
       </div>
     </div>
     <div class="grid width--6">
@@ -245,8 +238,8 @@
       </div>
     </div>
     <div class="grid width--6">
-      <div class="yh-1-3-pic">
-        <img alt="" src=""/> &nbsp;
+      <div class="yh-1-3-pic yh-1-3-pic-3">
+        <img alt="" src="/images/myk/yh-3-3.png" />
       </div>
     </div>
   </div>
@@ -269,12 +262,12 @@
     </div>
     <div class="yh-1-4-context">
       <div class="row">
-        <div class="grid width--2">
-          <div class="yh-1-4-pic">
-            <img alt="" src=""/> &nbsp;
+        <div class="grid width--3">
+          <div class="yh-1-4-pic yh-1-4-pic-1">
+            <img alt="" src="/images/myk/yh-4-2.png" />
           </div>
         </div>
-        <div class="grid width--10">
+        <div class="grid width--9">
           <div class="yh-1-4-text">
             <p>
               第一次见到龚燕玲的时候，一张娃娃脸挂着可爱的笑容，给人亲切的感觉就像个小女孩。刚转到易换生活市场部，谁也没想到这个柔柔弱弱的女生却能在市场中展现出惊人的爆发力。
@@ -306,7 +299,7 @@
     </div>
     <div class="yh-1-4-context">
       <div class="row">
-        <div class="grid width--10">
+        <div class="grid width--9">
           <div class="yh-1-4-text">
             <p>
               “困住一个女人的，从来不是年龄和身份，而是视野和观念”这是兰晓玲的座右铭，也是她一直勇往直前的不竭动力！
@@ -319,9 +312,9 @@
             </p>
           </div>
         </div>
-        <div class="grid width--2">
-          <div class="yh-1-4-pic">
-            <img alt="" src=""/> &nbsp;
+        <div class="grid width--3">
+          <div class="yh-1-4-pic yh-1-4-pic-2">
+            <img alt="" src="/images/myk/yh-4-2.png" />
           </div>
         </div>
       </div>
@@ -335,7 +328,7 @@
 
 
 
-<div class="yh-tab-2">
+<div class="yh-tab-content yh-tab-2">
 <div class="section">
   <div class="title-1">Operators work content</div>
   <div class="title-2">运营商工作内容</div>
@@ -372,8 +365,8 @@
         </div>
       </div>
     </div>
-    <div class="yh-2-1-pic">
-      <img alt="" src=""/> &nbsp;
+    <div class="yh-2-1-pic yh-2-1-pic-1">
+      <img alt="" src="/images/myk/yh-t2-1.png" />
     </div>
   </div>
 
@@ -413,8 +406,8 @@
         </div>
       </div>
     </div>
-    <div class="yh-2-1-pic">
-      <img alt="" src=""/> &nbsp;
+    <div class="yh-2-1-pic yh-2-1-pic-2">
+      <img alt="" src="/images/myk/yh-t2-2.png" />
     </div>
   </div>
 
@@ -437,8 +430,8 @@
         </div>
       </div>
     </div>
-    <div class="yh-2-1-pic">
-      <img alt="" src=""/> &nbsp;
+    <div class="yh-2-1-pic yh-2-1-pic-3">
+      <img alt="" src="/images/myk/yh-t2-3.png" />
     </div>
   </div>
 </div>
@@ -808,7 +801,7 @@
 
 
 
-<div class="yh-tab-3">
+<div class="yh-tab-content yh-tab-3">
 
   <div class="section">
     <div class="title-1">Our advantage</div>
@@ -828,7 +821,7 @@
         <div class="grid width--4">
           <div class="yh-3-1-block">
             <div class="yh-3-1-pic">
-              <img alt="" src="/images/myk/contact-1-1.png" />
+              <img alt="" src="/images/myk/yh-t3-1.png" />
             </div>
             <div class="yh-3-1-text">零门槛，不收保证金</div>
           </div>
@@ -836,7 +829,7 @@
         <div class="grid width--4">
           <div class="yh-3-1-block">
             <div class="yh-3-1-pic">
-              <img alt="" src="/images/myk/contact-1-1.png" />
+              <img alt="" src="/images/myk/yh-t3-2.png" />
             </div>
             <div class="yh-3-1-text">没有手续费</div>
             <div class="yh-3-1-text">保证商家交易利润最大化</div>
@@ -845,7 +838,7 @@
         <div class="grid width--4">
           <div class="yh-3-1-block">
             <div class="yh-3-1-pic">
-              <img alt="" src="/images/myk/contact-1-1.png" />
+              <img alt="" src="/images/myk/yh-t3-3.png" />
             </div>
             <div class="yh-3-1-text">品牌选择性入驻平台</div>
             <div class="yh-3-1-text">降低商家线上竞争压力</div>
@@ -856,7 +849,7 @@
         <div class="grid width--4">
           <div class="yh-3-1-block">
             <div class="yh-3-1-pic">
-              <img alt="" src="/images/myk/contact-1-1.png" />
+              <img alt="" src="/images/myk/yh-t3-4.png" />
             </div>
             <div class="yh-3-1-text">覆盖全国一百多个区域市场</div>
             <div class="yh-3-1-text">帮助企业快速推广产品</div>
@@ -865,7 +858,7 @@
         <div class="grid width--4">
           <div class="yh-3-1-block">
             <div class="yh-3-1-pic">
-              <img alt="" src="/images/myk/contact-1-1.png" />
+              <img alt="" src="/images/myk/yh-t3-5.png" />
             </div>
             <div class="yh-3-1-text">商家资金回流块</div>
             <div class="yh-3-1-text">降低运营风险</div>
@@ -874,7 +867,7 @@
         <div class="grid width--4">
           <div class="yh-3-1-block">
             <div class="yh-3-1-pic">
-              <img alt="" src="/images/myk/contact-1-1.png" />
+              <img alt="" src="/images/myk/yh-t3-6.png" />
             </div>
             <div class="yh-3-1-text">后台商品系统完善</div>
             <div class="yh-3-1-text">便于商家管理</div>
@@ -955,7 +948,7 @@
 
 
 
-<div class="yh-tab-4">
+<div class="yh-tab-content yh-tab-4">
   <div class="section">
     <div class="title-1">Busunessmen cooperaction regulations</div>
     <div class="title-2">商家合作规定</div>
@@ -968,7 +961,7 @@
     <div class="yh-4-1-body">
       <div class="yh-4-1-row">
         <div class="yh-4-1-tag">
-          <img alt="" src=""/>
+          <img alt="" src="/images/myk/yh-t4-tag.png" />
         </div>
         <div class="yh-4-1-title">一、相关定义</div>
         <div class="yh-4-1-content">
@@ -990,7 +983,7 @@
       </div>
       <div class="yh-4-1-row">
         <div class="yh-4-1-tag">
-          <img alt="" src=""/>
+          <img alt="" src="/images/myk/yh-t4-tag.png" />
         </div>
         <div class="yh-4-1-title">二、商家入驻须知及账户管理</div>
         <div class="yh-4-1-content">
@@ -1018,7 +1011,7 @@
       </div>
       <div class="yh-4-1-row">
         <div class="yh-4-1-tag">
-          <img alt="" src=""/>
+          <img alt="" src="/images/myk/yh-t4-tag.png" />
         </div>
         <div class="yh-4-1-title">三、易换生活商家使用须知</div>
         <div class="yh-4-1-content">
@@ -1037,7 +1030,7 @@
       </div>
       <div class="yh-4-1-row">
         <div class="yh-4-1-tag">
-          <img alt="" src=""/>
+          <img alt="" src="/images/myk/yh-t4-tag.png" />
         </div>
         <div class="yh-4-1-title">四、商家义务与责任</div>
         <div class="yh-4-1-content">
@@ -1115,7 +1108,7 @@
       </div>
       <div class="yh-4-1-row">
         <div class="yh-4-1-tag">
-          <img alt="" src=""/>
+          <img alt="" src="/images/myk/yh-t4-tag.png" />
         </div>
         <div class="yh-4-1-title">五、易换生活的平台权利和义务</div>
         <div class="yh-4-1-content">
@@ -1130,7 +1123,7 @@
       </div>
       <div class="yh-4-1-row">
         <div class="yh-4-1-tag">
-          <img alt="" src=""/>
+          <img alt="" src="/images/myk/yh-t4-tag.png" />
         </div>
         <div class="yh-4-1-title">六、服务条款的修改</div>
         <div class="yh-4-1-content">
@@ -1143,7 +1136,7 @@
       </div>
       <div class="yh-4-1-row">
         <div class="yh-4-1-tag">
-          <img alt="" src=""/>
+          <img alt="" src="/images/myk/yh-t4-tag.png" />
         </div>
         <div class="yh-4-1-title">七、服务的中断和终止</div>
         <div class="yh-4-1-content">
@@ -1160,7 +1153,7 @@
       </div>
       <div class="yh-4-1-row">
         <div class="yh-4-1-tag">
-          <img alt="" src=""/>
+          <img alt="" src="/images/myk/yh-t4-tag.png" />
         </div>
         <div class="yh-4-1-title">八、责任限制</div>
         <div class="yh-4-1-content">
@@ -1173,7 +1166,7 @@
       </div>
       <div class="yh-4-1-row">
         <div class="yh-4-1-tag">
-          <img alt="" src=""/>
+          <img alt="" src="/images/myk/yh-t4-tag.png" />
         </div>
         <div class="yh-4-1-title">九、知识产权</div>
         <div class="yh-4-1-content">
@@ -1185,7 +1178,7 @@
       </div>
       <div class="yh-4-1-row">
         <div class="yh-4-1-tag">
-          <img alt="" src=""/>
+          <img alt="" src="/images/myk/yh-t4-tag.png" />
         </div>
         <div class="yh-4-1-title">十、违约责任</div>
         <div class="yh-4-1-content">
@@ -1198,7 +1191,7 @@
       </div>
       <div class="yh-4-1-row">
         <div class="yh-4-1-tag">
-          <img alt="" src=""/>
+          <img alt="" src="/images/myk/yh-t4-tag.png" />
         </div>
         <div class="yh-4-1-title">十一 通知和公告</div>
         <div class="yh-4-1-content">
@@ -1214,7 +1207,7 @@
       </div>
       <div class="yh-4-1-row">
         <div class="yh-4-1-tag">
-          <img alt="" src=""/>
+          <img alt="" src="/images/myk/yh-t4-tag.png" />
         </div>
         <div class="yh-4-1-title">十二、法律管辖和适用</div>
         <div class="yh-4-1-content">
@@ -1229,7 +1222,7 @@
 
     </div>
     <div class="yh-4-1-footer">
-      <img alt="" src=""/>
+      <img alt="" src="/images/myk/yh-t4-tag.png" />
     </div>
   </div>
 </div>
@@ -1245,6 +1238,13 @@
 {{ $.css("index") }}
 {% endblock %}
 
+{% block scripts %}
+  <script src="http://webapi.amap.com/maps?v=1.3&key=4d28581adba669255e8f9028ddd4f5d5"></script>
+  {{ $.js("/vendor.dll") }}
+  {{ $.js("/commons") }}
+  {{ $.js("common") }}
+  {{ $.js("yh") }}
+{% endblock %}
 
 {% extends "tpls/page.html" %}
 
