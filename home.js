@@ -31,3 +31,16 @@ $('.home-6-btn').on('click', function() {
 })
 
 
+let carouselCurrFrame = 0
+let carouselCurrLength = $('.home-carousel-frame').length
+$('.home-carousel').height(screen.availHeight - 88)
+$('.home-carousel').width(carouselCurrLength * 100 + '%')
+$('.home-carousel-frame').width((1 / 3 * 100) + '%')
+
+function runCarousel() {
+  $('.home-carousel').animate({ left: (-100 * carouselCurrFrame)+ '%' }, 1200, function() {
+    carouselCurrFrame = (carouselCurrFrame >= carouselCurrLength - 1 ? 0 : carouselCurrFrame + 1)
+  })
+}
+
+setInterval(runCarousel, 4567)
